@@ -1,0 +1,159 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Roboto-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://qrcode.png" type="Texture" id=2]
+[ext_resource path="res://main.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=2]
+size = 70
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 19
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 14
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 15
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=6]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("PercentageTextLabel:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "0% complete" ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "start"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PercentageTextLabel:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6, 0.9, 1.2, 1.4, 1.7, 1.8, 2.5, 2.6, 2.7, 3.5, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "0% complete", "3% complete", "17% complete", "32% complete", "45% complete", "61% complete", "73% complete", "74% complete", "80% complete", "92% complete", "93% complete", "99% complete", "100% complete" ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "_die"
+} ]
+}
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0.219608, 0.976471, 1 )
+
+[node name="EmojiTextLabel" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -335.0
+margin_top = -259.0
+margin_right = 336.0
+margin_bottom = -155.0
+custom_fonts/normal_font = SubResource( 2 )
+text = ":("
+
+[node name="IssuesTextLabel" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -335.0
+margin_top = -144.0
+margin_right = 336.0
+margin_bottom = -92.0
+custom_fonts/normal_font = SubResource( 1 )
+text = "PC ran into problems. Needs a restart. We will just collect some personal data from you now, sell it and then we'll restart the Pc for you."
+
+[node name="InformationsLable" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -172.0
+margin_top = 9.0
+margin_right = 266.0
+margin_bottom = 149.0
+custom_fonts/normal_font = SubResource( 3 )
+text = "More informations on https://github.com/BenHerbst/
+
+
+
+
+Code of error: ISSUE_ON_PC_123!\"
+Advice: Switch to Linux"
+
+[node name="PercentageTextLabel" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -335.0
+margin_top = -67.0
+margin_right = 336.0
+margin_bottom = -39.0
+custom_fonts/normal_font = SubResource( 1 )
+text = "0% complete"
+
+[node name="CreditsTextLabel" type="RichTextLabel" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 11.0
+margin_top = -26.0
+margin_right = 682.0
+margin_bottom = -6.0
+custom_fonts/normal_font = SubResource( 4 )
+text = "Using Roboto font: https://fonts.google.com/specimen/Roboto. Bluenix is created by BenHerbst"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -332.0
+margin_top = 10.0
+margin_right = -189.0
+margin_bottom = 148.0
+texture = ExtResource( 2 )
+stretch_mode = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "start"
+anims/RESET = SubResource( 6 )
+anims/start = SubResource( 5 )
+
+[connection signal="gui_input" from="." to="." method="_on_Control_gui_input"]
