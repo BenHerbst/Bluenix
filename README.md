@@ -1,5 +1,6 @@
 # Bluenix - The Linux bluescreen
 
+![Bluenix](https://user-images.githubusercontent.com/83538916/170375895-08d3991c-6f5e-4e0d-abdb-2d9bfc71ebd9.png)
 
 
 ## Introducing
@@ -25,3 +26,8 @@ chmod +x Bluenix.x86_64
 ```
 
 You can now at the Bluenix.x86_64 file to your startup applications.
+
+## Credits
+Created by Ben Herbst using the Godot game engine.
+
+Using the Roboto font: https://fonts.google.com/specimen/Roboto/
