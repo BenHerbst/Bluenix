@@ -97,7 +97,7 @@ margin_top = -144.0
 margin_right = 336.0
 margin_bottom = -92.0
 custom_fonts/normal_font = SubResource( 1 )
-text = "PC ran into problems. Needs a restart. We will just collect some personal data from you now, sell it and then we'll restart the Pc for you."
+text = "PC ran into a problem and needs to restart. We’re just collecting some personal data, selling it, and then we'll restart for you."
 
 [node name="InformationsLable" type="RichTextLabel" parent="."]
 anchor_left = 0.5
