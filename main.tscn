@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Roboto-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://qrcode.png" type="Texture" id=2]
 [ext_resource path="res://main.gd" type="Script" id=3]
+[ext_resource path="res://animation_player.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=2]
 size = 70
@@ -155,5 +156,6 @@ stretch_mode = 6
 autoplay = "start"
 anims/RESET = SubResource( 6 )
 anims/start = SubResource( 5 )
+script = ExtResource( 4 )
 
 [connection signal="gui_input" from="." to="." method="_on_Control_gui_input"]
