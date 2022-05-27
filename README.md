@@ -1,4 +1,4 @@
-# Bluenix - The Linux bluescreen
+# Bluenix - The Linux Bluescreen
 
 <br>
 <p align="center">
