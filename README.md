@@ -1,12 +1,19 @@
 # Bluenix - The Linux bluescreen
 
-![Bluenix](https://user-images.githubusercontent.com/83538916/170375895-08d3991c-6f5e-4e0d-abdb-2d9bfc71ebd9.png)
+<br>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83538916/170606281-14afe62d-ad35-48bd-a4d0-cf36628024c0.png" width=250>
+  </br>
+  <a href="https://github.com/BenHerbst/Bluenix">Bluenix</a>
+</p>
 
 
 ## Introducing
 We already have things like activate Linux, Windows themes etc. on Linux to get a _good_ Windows like Linux experience...
 
 But the most important thing is missing: **The bluescreen of death!**
+
+![Bluenix](https://user-images.githubusercontent.com/83538916/170375895-08d3991c-6f5e-4e0d-abdb-2d9bfc71ebd9.png)
 
 This project tries to fill that gap and provide a bluescreen on Linux that you can show up on your system start.
 
