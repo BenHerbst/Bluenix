@@ -20,7 +20,7 @@ This project tries to fill that gap and provide a bluescreen on Linux that you c
 Now everyone can finally use Linux without missing anything from Windows.
 
 ##  How to get it?
-Download the latest version for Linux at: [https://github.com/BenHerbst/Bluenix/releases/](https://github.com/BenHerbst/Bluenix/releases/)
+Download the latest version for at: [https://github.com/BenHerbst/Bluenix/releases/](https://github.com/BenHerbst/Bluenix/releases/)
 
 It is the .x86_64 file. Bluenix also runs under Windows ( the .exe ).
 
