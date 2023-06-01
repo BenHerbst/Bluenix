@@ -7,7 +7,6 @@
   <a href="https://github.com/BenHerbst/Bluenix">Bluenix</a>
 </p>
 
-
 ## Introducing
 We already have things like activate Linux, Windows themes etc. on Linux to get a _good_ Windows like Linux experience...
 
@@ -34,10 +33,11 @@ chmod +x Bluenix.x86_64
 
 You can now at the Bluenix.x86_64 file to your startup applications.
 
+## Support me ( PayPal )
+|[Donate](https://www.paypal.com/donate/?hosted_button_id=C5X9LBEM7XZ64)|
+|---|
+
 ## Credits
 Created by Ben Herbst using the Godot game engine.
 
 Using the Roboto font: https://fonts.google.com/specimen/Roboto/
-
-## Support me ( PayPal )
-https://www.paypal.com/donate/?hosted_button_id=C5X9LBEM7XZ64
