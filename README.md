@@ -39,5 +39,5 @@ Created by Ben Herbst using the Godot game engine.
 
 Using the Roboto font: https://fonts.google.com/specimen/Roboto/
 
-## Support me ( BTC )
-![Bitcoin qrcode](https://user-images.githubusercontent.com/83538916/168448619-0bc622cd-47f2-4a28-84e1-e5cadde70669.png)
+## Support me ( PayPal )
+https://www.paypal.com/donate/?hosted_button_id=C5X9LBEM7XZ64
